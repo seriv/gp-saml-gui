@@ -54,6 +54,12 @@ On Fedora (and possibly RHEL/CentOS) the matching libraries are packaged in
 ```
 $ sudo dnf install python3-gobject gtk3-devel webkit2gtk3-devel
 ```
+On RedHat 7:
+```
+sudo yum install  gobject-introspection-devel gtk3-devel webkitgtk3-devel python3-devel
+sudo pip3 install pycairo
+
+```
 
 On Arch Linux, the libraries are packaged in `gtk3`, `gobject-introspection`
 and `webkit2gtk`:
@@ -68,7 +74,7 @@ Second, gp-saml-gui itself
 Install gp-saml-gui itself using `pip`:
 
 ```
-$ pip3 install https://github.com/seriv/gp-saml-gui/archive/master.zip
+$ pip3 install https://github.com/seriv/gp-saml-gui/archive/master.zip --prefix $HOME/.local
 ...
 $ gp-saml-gui
 usage: gp-saml-gui [-h] [--no-verify] [-C COOKIES | -K] [-p | -g] [-c CERT]
