@@ -30,7 +30,7 @@ This script is known to work with many GlobalProtect VPNs using the major single
 - Okta (sign-in URLs typically `https://<company>.okta.com/login/*`)
 - Microsoft (sign-in URLs typically `https://login.microsoftonline.com/*`)
 
-Please search and file [issues](https://github.com/seriv/gp-saml-gui/issues) if you can report success
+Please search and file [issues](https://github.com/dlenski/gp-saml-gui/issues) if you can report success
 or failure with other SSO SAML providers.
 
 Installation
@@ -68,7 +68,7 @@ Second, gp-saml-gui itself
 Install gp-saml-gui itself using `pip`:
 
 ```
-$ pip3 install https://github.com/dlenski/gp-saml-gui/archive/master.zip
+$ pip3 install https://github.com/seriv/gp-saml-gui/archive/master.zip
 ...
 $ gp-saml-gui
 usage: gp-saml-gui [-h] [--no-verify] [-C COOKIES | -K] [-p | -g] [-c CERT]
